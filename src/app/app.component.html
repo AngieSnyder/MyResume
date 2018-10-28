@@ -1,16 +1,24 @@
-<div style="text-align:center">
-  <h1>
-     {{ title }}
-  </h1>
-  <div>
-    <h4>Contact info:</h4>
-    {{name}},{{phone}},{{email}}
+<div id="container">
+  <div style="text-align:center">
+    <h1>
+      {{ name }}
+    </h1>
+    <div style= "float: left">
+      <h3>Contact info:</h3>
+      {{phone}} {{email}} <br>
+      {{github}} {{linkedin}}
+    </div>
+    <div>
+      <img src="img/Angie.jpg" width="150px" height="150px">
+    </div>
   </div>
-  
-
-</div>
-<div>
-    <hr>
-    <h4 style="text-align:center">Experience:</h4>
+  <hr>
+  <div>
+    <h3 style="text-align:center">Technology</h3>
+    <app-technology></app-technology>
+  </div>
+  <div>
+    <h3 style="text-align:center">Experience:</h3>
     <app-my-work-experience></app-my-work-experience>
+  </div>
 </div>
